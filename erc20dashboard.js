@@ -176,7 +176,7 @@
 							 success: function (d) {
 								amount = parseInt(d.result,16);
 								
-								$("#sk,.balacnetokensnocss").html(amount);
+								$("#sk,.balacnetokensnocss").html(amount/100000000);
 								$(".balacnetokens").html(amount);
 								if (parseInt(d.result,16)>0) {
 									$(".onlyhavetoken").show();
