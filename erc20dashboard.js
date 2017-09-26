@@ -60,7 +60,7 @@
 							
 							options.data = data 
 							console.log("options.data",options.data);
-							options.gasPrice="0x737be7600";//web3.toHex('31000000000');
+							options.gasPrice="0xAF16B1600";//web3.toHex('31000000000');
 							options.gasLimit=0x927c0; //web3.toHex('600000');
 							options.value = value1*1000000000000000000;
 							
