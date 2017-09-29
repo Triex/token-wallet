@@ -74,7 +74,7 @@
 								url: urlApi+"/api?module=proxy&action=eth_sendRawTransaction&hex="+"0x"+serializedTx+"&apikey=YourApiKeyToken",
 								success: function (d) {
 									console.log(d);
-									$(callback).html("<A target=_blank href='https://"+option_etherscan_api.replace("api.")+"/tx/"+d.result+"'>"+d.result+"</a>");
+									$(callback).html("<A target=_blank href='"+option_etherscan_api.replace("api.")+"/tx/"+d.result+"'>"+d.result+"</a>");
 									
 									if (typeof d.error != "undefined") {
 										if (d.error.message.match(/Insufficient fund/)) d.error.message = 'Error: you must have a small amount of ETH in your account in order to cover the cost of gas. Add 0.02 ETH to this account and try again.'; //If you are getting an insufficient balance for gas ... error, you must have a small amount of ETH in your account in order to cover the cost of gas. Add 0.01 ETH to this account and try again.
